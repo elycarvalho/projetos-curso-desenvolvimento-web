@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Efeito Parallax</title>
+        <style type="text/css">
+            body, html {
+                margin: 0;
+                font: 16px "lato", sans-serif;
+                color: #777;
+                height: 100%;
+            }
+            .conteudo {
+                color: #777;
+                background-color: #fff;
+                text-align: justify;
+                padding: 50px 80px;
+            }
+            h3 {
+                text-transform: uppercase;
+                color: #111;
+                text-align: center;
+            }
+
+            p {
+                margin-bottom: 20px;
+            }
+            /*** efeito parallax ***/
+            .caixa1, .caixa2, .caixa3, .caixa4 {
+                height: 100%;
+                opacity: 0.7;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            }
+            .caixa1 {
+                background-image: url(imagens/imagem1.jpg);
+            }
+            .caixa2 {
+                background-image: url(imagens/imagem2.jpg);
+            }
+            .caixa3 {
+                background-image: url(imagens/imagem3.jpg);
+            }
+            .caixa4 {
+                background-image: url(imagens/imagem4.jpg);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="caixa1">
+            Caixa 1
+        </div>
+        <div class="conteudo">
+            <h3>Parallax</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Facere perspiciatis commodi nobis dolorum unde reprehenderit 
+            eveniet aliquid aperiam eaque vitae suscipit iste Lorem ipsum 
+            dolor sit amet consectetur adipisicing elit. Nesciunt, natus. Ullam 
+            eligendi magnam asperiores dignissimos quibusdam consequuntur 
+            temporibus fugit quod accusamus fuga explicabo, deserunt similique 
+            qui enim ratione, suscipit placeat.
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Facere perspiciatis commodi nobis dolorum unde reprehenderit 
+                eveniet aliquid aperiam eaque vitae suscipit iste Lorem ipsum 
+                dolor sit amet consectetur adipisicing elit. Nesciunt, natus. Ullam 
+                eligendi magnam asperiores dignissimos quibusdam consequuntur 
+                temporibus fugit quod accusamus fuga explicabo, deserunt similique 
+                qui enim ratione, suscipit placeat.
+            </p>
+        </div>
+        <div class="caixa2">
+            Caixa 2
+        </div>
+        <div class="caixa3">
+            Caixa 3
+        </div>
+        <div class="caixa4">
+            Caixa 4
+        </div>
+        
+    </body>
+</html>
